@@ -39,12 +39,14 @@ class AddTodo extends Component {
       // 3. The value of the text field also should reflect the local state of this component.
       <div>
         <TextField
+          data-testid="new-item-textfield" // This is a test id for the text field
           label="Add New Item"
           variant="outlined"
           //onChange={call handleChange here}
           //value={set the content state here}
         />
         <Button
+          data-testid="new-item-button" // This is a test id for the button
           style={{ marginLeft: "10px" }}
           //onClick={call handleSubmit here}
           variant="contained"
